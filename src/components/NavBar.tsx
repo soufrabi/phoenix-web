@@ -1,6 +1,4 @@
 import React from "react"
-// import Image from "next/image"
-// import { useRouter } from "next/navigation";
 import { useSearchParams } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CiSearch } from "react-icons/ci";
@@ -28,10 +26,6 @@ function NavBar() {
         setSearchQueryString(ev.target.value)
     }
 
-    const handleAppIconClick = () => {
-        // router.push('/')
-    }
-
     return (
         <div className="fixed h-12 w-full flex flex-row justify-between bg-white shadow-sm px-3 z-20">
             {/* left part of the navbar */}
@@ -41,23 +35,25 @@ function NavBar() {
                         className="w-5 h-5"
                     />
                 </div>
-                <div
-                    className="flex flex-row gap-2 items-center cursor-pointer"
-                    onClick={handleAppIconClick}
+                <a
+                    href="/"
                 >
-                    <img
-                        src={"/phoenix-logo.png"}
-                        alt=""
-                        width={30}
-                        height={30}
-                        onContextMenu={(ev: React.MouseEvent<HTMLImageElement>) => { ev.preventDefault() }}
-                    />
-                    <div>
-                        <span
-                            className="text-lg select-none"
-                        >Phoenix</span>
+                    <div
+                        className="flex flex-row gap-2 items-center cursor-pointer"
+                    >
+                        <img
+                            src={"/phoenix-logo.png"}
+                            alt=""
+                            width={30}
+                            height={30}
+                        />
+                        <div>
+                            <span
+                                className="text-lg select-none"
+                            >Phoenix</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
 
             {/* search bar */}
