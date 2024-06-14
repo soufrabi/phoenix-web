@@ -166,7 +166,7 @@ export default function ResultsPage() {
 
         } catch (err: any) {
             // console.error(err)
-            console.error("Could not connect to api server")
+            console.error("failed to connect to api server")
         }
 
     }
