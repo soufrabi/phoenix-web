@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import axios, { AxiosResponse } from 'axios';
 import { nanoid } from 'nanoid';
 import { currentInvidiousInstance } from '../data/invidious';
+import { Interweave } from 'interweave';
 
 type InvidiousVideosResponseRecommendedVideo = {
     "videoId": string,
@@ -240,9 +241,8 @@ export default function WatchPage() {
                                 <div
                                     className="p-2"
                                 >
-                                    <div
-                                        className=""
-                                        dangerouslySetInnerHTML={{ __html: videoInfo.descriptionHtml }}
+                                    <Interweave
+                                        content={videoInfo.descriptionHtml}
                                     />
                                 </div>
                             </div>
