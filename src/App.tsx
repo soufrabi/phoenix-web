@@ -17,9 +17,9 @@ function App() {
         return searchParams.get("type")
     }, [searchParams])
     return (
-        <>
+        <div className='h-screen w-screen'>
             <NavBar />
-            <div className="">
+            <>
                 Tailwind
                 {
                     pageType === "watch" && <WatchPage />
@@ -34,8 +34,8 @@ function App() {
                 {
                     pageType === null && <HomePage />
                 }
-            </div>
-        </>
+            </>
+        </div>
     )
 }
 
