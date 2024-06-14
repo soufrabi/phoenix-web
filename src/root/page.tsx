@@ -1,12 +1,3 @@
-"use client"
-
-// import { Pacifico } from "next/font/google"
-
-// const pacifico = Pacifico({
-//     subsets: ['latin'],
-//     display: 'swap',
-//     weight: '400',
-// })
 
 export default function HomePage() {
     return (
