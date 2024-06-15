@@ -4,6 +4,7 @@ import axios, { AxiosResponse } from 'axios';
 import { nanoid } from 'nanoid';
 import { currentInvidiousInstance } from '../data/invidious';
 import { Interweave } from 'interweave';
+import { getVideoThumbnailUrl } from '../utils';
 
 type InvidiousVideosResponseRecommendedVideo = {
     "videoId": string,
@@ -252,7 +253,7 @@ export default function WatchPage() {
                         {recommendedVideos.map((recommendedVideo) => (
                             <div key={nanoid()} className='flex flex-row gap-2'>
                                 <img
-                                    src={recommendedVideo.videoThumbnails[0].url}
+                                    src={getVideoThumbnailUrl(recommendedVideo.videoThumbnails)}
                                     alt={""}
                                     width={16 * 15}
                                     height={9 * 15}

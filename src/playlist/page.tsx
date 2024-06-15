@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom"
 import axios, { AxiosResponse } from "axios"
 import { nanoid } from "nanoid"
 import { currentInvidiousInstance } from '../data/invidious'
+import { getVideoThumbnailUrl } from '../utils'
 
 
 type IndividiousPlaylistResponse = {
@@ -102,7 +103,7 @@ export default function PlaylistPage() {
                     <div className='flex flex-col gap-2 col-span-3 items-center px-8 py-4 bg-blue-50/80 rounded-2xl'>
                         <img
 
-                            src={playlistInfo?.videos[0].videoThumbnails[0].url}
+                            src={playlistInfo !== null ? getVideoThumbnailUrl(playlistInfo.videos[0].videoThumbnails) : ""}
                             alt={""}
                             // width={16 * 25}
                             // height={9 * 25}

@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom"
 import axios, { AxiosResponse } from "axios"
 import { nanoid } from "nanoid"
 import { currentInvidiousInstance } from "../data/invidious"
+import {getVideoThumbnailUrl} from "../utils/index"
 
 type InvidiousSearchResponseVideo = {
     type: "video",
@@ -101,7 +102,7 @@ function VideoItem(props: InvidiousSearchResponseVideo) {
             className="flex flex-row gap-2"
         >
             <img
-                src={props.videoThumbnails[0].url}
+                src={getVideoThumbnailUrl(props.videoThumbnails)}
                 alt={""}
                 width={16 * 30}
                 height={9 * 30}
