@@ -9,6 +9,7 @@ import HomePage from './root/page'
 import './App.css'
 import { useMemo } from 'react'
 import { NavBar } from './components/NavBar'
+import SettingsPage from './settings/page'
 
 
 function App() {
@@ -30,6 +31,9 @@ function App() {
                 {
                     pageType === "playlist" && <PlaylistPage />
 
+                }
+                {
+                    pageType === "settings" && <SettingsPage />
                 }
                 {
                     pageType === null && <HomePage />
