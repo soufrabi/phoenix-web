@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+<h1 align="center"> Phoenix </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="https://www.gnu.org/licenses/agpl-3.0.en.html">
+    <img alt="License: AGPLv3" src="https://shields.io/badge/License-AGPL%20v3-blue.svg">
+  </a>
+  <a href="https://github.com/soufrabi/phoenix-web/commits/master">
+    <img alt="GitHub commits" src="https://img.shields.io/github/commit-activity/y/soufrabi/phoenix-web?color=red&label=commits">
+  </a>
+  <a href="https://github.com/soufrabi/phoenix-web/issues">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/soufrabi/phoenix-web?color=important">
+  </a>
+  <a href="https://github.com/soufrabi/phoenix-web/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/soufrabi/phoenix-web?color=blueviolet">
+  </a>
+  <a href="https://github.com/soufrabi/phoenix-web/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/soufrabi/phoenix-web?style=social">
+  </a>
+</p>
+ 
+<p align="center">
+An open source YouTube front-end using Invidious API
+</p>
 
-Currently, two official plugins are available:
+## Screenshots
+<div align="center" style=""> 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <img alt="screenshot1" style="max-width:40vw;" src="https://soufrabi.github.io/project-assets/phoenix/screenshot1.png">
 
-## Expanding the ESLint configuration
+</div>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Quick Start
+Visit 
+<a href="https://phoenix.soufrabi.com/">link</a>
+and start watching videos now
 
-- Configure the top-level `parserOptions` property like this:
+## Development
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Testing
+
+```
+git clone https://github.com/soufrabi/phoenix-web.git
+cd phoenix-web
+npm install
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Author
+
+<a href = "https://anirban.soufrabi.com" style="text-decoration: none; color: inherit;">Anirban Dey</a>
+
+## License
+
+This project is licensed under the GNU Affero General Public License v3.0 - see the [LICENSE](./LICENSE) file for details
